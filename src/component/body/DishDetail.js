@@ -1,4 +1,5 @@
 import React from 'react';
+import LoadComments from './LoadComments';
 import {
     Card, CardImg, CardImgOverlay, CardText, CardBody,
     CardTitle, CardSubtitle, Button
@@ -17,6 +18,8 @@ const DishDetail = (props) => {
                     <CardText>
                         {props.dish.description}
                     </CardText>
+                    <hr />
+                    <LoadComments comments={props.dish.comments} />
                 </CardBody>
             </Card>
         </div>
